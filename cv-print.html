@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Vedran Balagović — CV</title>
+<style>
+  @page {
+    size: A4;
+    margin: 14mm 15mm 13mm 15mm;
+    @bottom-center {
+      content: "Vedran Balagović — CV";
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 7.5pt; color: #9aa3ad;
+    }
+    @bottom-right {
+      content: counter(page) " / " counter(pages);
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 7.5pt; color: #9aa3ad;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 9.4pt;
+    line-height: 1.45;
+    color: #1f2933;
+    margin: 0;
+  }
+  a { color: #0a7d63; text-decoration: none; }
+
+  /* ---- header ---- */
+  .head { border-bottom: 2.2pt solid #0a7d63; padding-bottom: 8pt; margin-bottom: 12pt; }
+  .name { font-size: 23pt; font-weight: 800; letter-spacing: -0.4pt; color: #10171f; margin: 0; }
+  .role { font-size: 10.5pt; font-weight: 600; color: #0a7d63; margin: 2pt 0 7pt; letter-spacing: 0.2pt; }
+  .contact { font-size: 8.4pt; color: #3d4854; line-height: 1.7; }
+  .contact b { color: #1f2933; }
+  .contact a { white-space: nowrap; }
+  .sep { color: #c2cbd4; padding: 0 5pt; }
+
+  /* ---- sections ---- */
+  h2 {
+    font-size: 10.5pt; font-weight: 800; text-transform: uppercase; letter-spacing: 0.7pt;
+    color: #10171f; margin: 14pt 0 6pt; padding-bottom: 2.5pt;
+    border-bottom: 0.6pt solid #d8dee5;
+  }
+  p { margin: 0 0 5pt; }
+  .summary { color: #2b343d; }
+
+  ul { margin: 3pt 0 0; padding-left: 14pt; }
+  li { margin-bottom: 2pt; }
+
+  /* ---- two-column strengths/stack ---- */
+  .cols { column-count: 2; column-gap: 18pt; }
+  .cols ul { margin-top: 0; }
+
+  /* ---- products ---- */
+  .item { margin-bottom: 8pt; }
+  .item-title { font-weight: 700; color: #10171f; font-size: 9.8pt; }
+  .item-meta { color: #5a6672; font-weight: 600; }
+  .item-link { font-size: 8.2pt; color: #0a7d63; }
+  .item p { margin-top: 1.5pt; color: #2b343d; }
+
+  /* ---- experience ---- */
+  .job { margin-bottom: 9pt; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; }
+  .job-title { font-weight: 700; color: #10171f; font-size: 9.8pt; }
+  .job-when { font-size: 8.2pt; color: #5a6672; font-weight: 600; white-space: nowrap; }
+  .job-sub { font-size: 8.4pt; color: #0a7d63; font-weight: 600; margin: 0 0 2pt; }
+
+  /* ---- stack ---- */
+  .stack-row { margin-bottom: 3pt; }
+  .stack-row b { display: inline-block; min-width: 118pt; color: #10171f; font-size: 8.7pt; }
+  .stack-row span { color: #3d4854; font-size: 8.9pt; }
+
+  .avail span {
+    display: inline-block; border: 0.7pt solid #0a7d63; color: #0a7d63;
+    border-radius: 3pt; padding: 1.5pt 6pt; font-size: 8.3pt; font-weight: 600;
+    margin: 0 4pt 4pt 0;
+  }
+  .keep { page-break-inside: avoid; }
+</style>
+</head>
+<body>
+
+  <div class="head">
+    <div class="name">Vedran Balagović</div>
+    <div class="role">CTO · Master of MVPs · Technical Advisor</div>
+    <div class="contact">
+      <b>Zagreb, Croatia</b><span class="sep">|</span><a href="mailto:vedran@knittedlogic.com">vedran@knittedlogic.com</a><br/>
+      <a href="https://linkedin.com/in/vedran-balagovic">linkedin.com/in/vedran-balagovic</a><span class="sep">|</span>
+      <a href="https://github.com/vbalagovic">github.com/vbalagovic</a><span class="sep">|</span>
+      <a href="https://medium.com/@vedran.balagovic">medium.com/@vedran.balagovic</a><span class="sep">|</span>
+      <a href="https://x.com/dr_terapeut">x.com/dr_terapeut</a><br/>
+      <a href="https://neuraldraft.io">neuraldraft.io</a><span class="sep">|</span>
+      <a href="https://lexcustis.eu">lexcustis.eu</a><span class="sep">|</span>
+      <a href="https://motchi.art">motchi.art</a>
+    </div>
+  </div>
+
+  <h2>Summary</h2>
+  <p class="summary">
+    Startup CTO with 10+ years building and scaling products from idea to revenue. I help early-stage
+    founders ship MVPs quickly, make sound architecture decisions, and figure out where AI genuinely
+    belongs in their product. Former agency founder (grew to 15 engineers), technical co-founder multiple
+    times, and open-source author with ~250+ GitHub stars across the Flutter ecosystem. Equally comfortable
+    shipping a polished mobile app, standing up a multi-tenant SaaS backend, or running large-scale
+    data/scraping pipelines that become the product's moat.
+  </p>
+
+  <h2>Core Strengths</h2>
+  <div class="cols">
+    <ul>
+      <li>Early-stage CTO leadership (Seed → Growth)</li>
+      <li>MVP to production in weeks</li>
+      <li>AI / LLM product integration &amp; automation</li>
+      <li>Large-scale scraping &amp; data pipelines</li>
+      <li>Scalable system architecture &amp; CI/CD</li>
+      <li>Founder &amp; investor communication</li>
+      <li>Remote-first team leadership</li>
+      <li>Technical due diligence &amp; advisory</li>
+    </ul>
+  </div>
+
+  <h2>Selected Products &amp; Live Work</h2>
+
+  <div class="item keep">
+    <span class="item-title">Neural Draft</span> <span class="item-meta">— Founder &amp; CEO</span>
+    <span class="item-link"><a href="https://neuraldraft.io">neuraldraft.io</a></span>
+    <p>The backend for AI-built sites. A single API giving AI-generated apps a production backend — CMS,
+    blogging, social scheduling, booking, and Stripe-connected commerce — plus an MCP server so tools like
+    Claude Code, Cursor and v0 build against it with automatic brand consistency. Multi-tenant, multi-language,
+    published TypeScript SDK.</p>
+  </div>
+
+  <div class="item keep">
+    <span class="item-title">Lex Custis</span> <span class="item-meta">— Creator (open source)</span>
+    <span class="item-link"><a href="https://lexcustis.eu">lexcustis.eu</a> · <a href="https://github.com/vbalagovic/lex-custis">github.com/vbalagovic/lex-custis</a></span>
+    <p>Open-source, EU-sovereign compliance engine for the EU AI Act. Self-host it, point it at your LLM, and
+    it becomes the regulator's proof layer: a tamper-evident audit log (per-org HMAC-SHA256 hash chain),
+    one-click Annex IV dossier export, an Article 73 serious-incident workflow, PII / prompt-injection
+    pre-checks, and confidence / grounding / bias post-checks. Multi-tenant, multi-LLM (Mistral or
+    self-hosted Ollama). AGPL-3.0.</p>
+  </div>
+
+  <div class="item keep">
+    <span class="item-title">AutoValuer</span> <span class="item-meta">— Builder</span>
+    <span class="item-link"><a href="https://autovaluer.eu">autovaluer.eu</a></span>
+    <p>"Know what any used car is actually worth." Real-time used-car valuations computed from 266k+ live
+    marketplace listings across 11 European markets, refreshed 4× daily — with photo-based AI condition
+    checking, fair-price ranges, and price alerts.</p>
+  </div>
+
+  <div class="item keep">
+    <span class="item-title">CarsDataset API</span> <span class="item-meta">— Builder</span>
+    <span class="item-link"><a href="https://api.carsdataset.com">api.carsdataset.com</a></span>
+    <p>The data engine behind AutoValuer, productized as a REST API: 54,000+ vehicles across 370+ brands and
+    110,000+ price listings, with CSV/SQL export. End-to-end scraping, normalization and data engineering at scale.</p>
+  </div>
+
+  <div class="item keep">
+    <span class="item-title">Littlemind</span> <span class="item-meta">— Builder</span>
+    <span class="item-link"><a href="https://littlemindapp.com/en">littlemindapp.com</a></span>
+    <p>A 60-second daily check-in app for parents of children 4–14; an AI companion surfaces patterns in mood,
+    sleep and behavior and suggests evidence-based techniques. Mobile (iOS &amp; Android), 10 languages,
+    therapist-ready PDF export.</p>
+  </div>
+
+  <div class="item keep">
+    <span class="item-title">motchi.art</span> <span class="item-meta">— Builder</span>
+    <span class="item-link"><a href="https://motchi.art">motchi.art</a></span>
+    <p>An AI character-animation engine that turns inputs into character animations through an AI-driven
+    pipeline — for creators and studios who want to skip manual animation work.</p>
+  </div>
+
+  <h2>Experience</h2>
+
+  <div class="job keep">
+    <div class="job-head"><span class="job-title">Founder &amp; CEO — Neural Draft (AI infrastructure)</span><span class="job-when">2025 – Present</span></div>
+    <div class="job-sub">UK / Remote</div>
+    <ul>
+      <li>Founded and led an AI-backend platform from zero to production.</li>
+      <li>Designed multi-tenant architecture supporting rapid onboarding and scale.</li>
+      <li>Built LLM-based generation pipelines and an MCP server integrated into real customer workflows.</li>
+      <li>Defined the technical roadmap and cost-aware AI usage strategy alongside monetization goals.</li>
+    </ul>
+  </div>
+
+  <div class="job keep">
+    <div class="job-head"><span class="job-title">CTO &amp; Co-Founder — Axerate</span><span class="job-when">2025 – Present</span></div>
+    <div class="job-sub">US / Remote</div>
+    <ul>
+      <li>Technical co-founder responsible for system architecture and execution.</li>
+      <li>Led MVP delivery under real startup constraints (time, budget, team size).</li>
+      <li>Stood up scalable backend/frontend foundations, CI/CD, code review, and a weekly release cadence from day one.</li>
+    </ul>
+  </div>
+
+  <div class="job keep">
+    <div class="job-head"><span class="job-title">CTO — QED d.o.o. (Software Consultancy &amp; Product Studio)</span><span class="job-when">2016 – 2025</span></div>
+    <div class="job-sub">Croatia</div>
+    <ul>
+      <li>Built and scaled a development company from 2 to 15 engineers.</li>
+      <li>Acted as fractional CTO for multiple startups across mobile, web, and backend.</li>
+      <li>Designed architectures optimized for long-term maintainability and scale; reduced time-to-market with internal tooling and reusable frameworks.</li>
+      <li>Mentored developers and led cross-functional technical decision-making.</li>
+    </ul>
+  </div>
+
+  <div class="job keep">
+    <div class="job-head"><span class="job-title">Co-Founder — Emploio (HR Tech)</span><span class="job-when">Previous</span></div>
+    <ul>
+      <li>Co-founded a recruitment-technology startup; designed core system architecture, data pipelines, and matching logic.</li>
+    </ul>
+  </div>
+
+  <h2>Technology Stack</h2>
+  <div class="stack-row"><b>Mobile &amp; Frontend</b><span>Flutter, Dart, Vue.js, React, TypeScript</span></div>
+  <div class="stack-row"><b>Backend &amp; APIs</b><span>Laravel, Python, Go, Node.js, REST APIs, Microservices</span></div>
+  <div class="stack-row"><b>AI / LLM</b><span>OpenAI &amp; Claude APIs, LLM orchestration, MCP, AI workflows, ML Kit</span></div>
+  <div class="stack-row"><b>Data &amp; Scraping</b><span>Large-scale scraping pipelines, normalization, DuckDB</span></div>
+  <div class="stack-row"><b>Cloud &amp; DevOps</b><span>AWS, GCP, Firebase, Docker, CI/CD, Fastlane</span></div>
+  <div class="stack-row"><b>Databases</b><span>PostgreSQL, MySQL, DuckDB, MongoDB, Firestore</span></div>
+
+  <h2>Open Source &amp; Writing</h2>
+  <p style="margin-bottom:4pt;">~250+ GitHub stars across Flutter ecosystem projects — <a href="https://github.com/vbalagovic">github.com/vbalagovic</a></p>
+  <ul style="margin-top:0;">
+    <li><b>flutter-presetup</b> — production-ready Flutter starter (flavors, Riverpod, GoRouter, localization). ~129★ / 31 forks.</li>
+    <li><b>flutter_scalable_ocr</b> — Flutter OCR package wrapping Google ML Kit with partial camera-region selection. ~81★ / 56 forks.</li>
+    <li><b>cars-dataset</b> — open vehicle-specs dataset (35,000+ variants, 370+ brands). ~16★.</li>
+    <li><b>lex-custis</b> — open-source EU AI Act compliance engine (AGPL-3.0). FastAPI + Postgres, hash-chained audit log.</li>
+  </ul>
+  <p style="margin-top:3pt;">Medium (220+ followers), published in <b>ITNEXT</b>; organizer of Zagorje DevCon. Topics: startup engineering, Flutter at scale, DevOps, AI integration.</p>
+
+  <h2>Availability</h2>
+  <div class="avail">
+    <span>CTO / Technical Co-Founder (early-stage)</span>
+    <span>Fractional CTO / Technical Advisor</span>
+    <span>Architecture &amp; AI Advisory</span>
+  </div>
+
+</body>
+</html>

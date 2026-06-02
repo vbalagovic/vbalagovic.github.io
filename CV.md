@@ -1,5 +1,5 @@
 # Vedran Balagović
-### CTO · Master of MVPs · Technical Advisor
+### Fractional CTO · Technical Advisor
 
 Zagreb, Croatia
 
@@ -17,9 +17,9 @@ Zagreb, Croatia
 
 ## Executive Summary
 
-Startup CTO with 10+ years building and scaling products from idea to revenue. I help
-early-stage founders ship MVPs quickly, make sound architecture decisions, and figure out
-where AI genuinely belongs in their product. Former agency founder (grew to 15 engineers),
+Fractional CTO and technical advisor with 10+ years of technical leadership. I help
+early-stage founders set technical direction, make sound architecture decisions, and figure out
+where AI genuinely belongs in their product — and I can build the first version myself. Former agency founder (grew to 15 engineers),
 technical co-founder multiple times, and open-source author with ~250+ GitHub stars across
 the Flutter ecosystem. Equally comfortable shipping a polished mobile app, standing up a
 multi-tenant SaaS backend, or running large-scale data/scraping pipelines that become the

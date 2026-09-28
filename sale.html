@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio for sale — Neural Draft Ltd + 8 products</title>
+  <meta name="description" content="Neural Draft Ltd (UK) plus eight live AI products and mobile apps, with Stripe-verified revenue, full source code and git history." />
+  <meta name="robots" content="noindex" />
+  <meta property="og:title" content="Portfolio for sale — Neural Draft Ltd + 8 products" />
+  <meta property="og:description" content="Eight live AI products and mobile apps plus a UK company. Stripe-verified revenue, full source and history included." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vbalagovic.github.io/sale.html" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='42' fill='%232c52cc'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .sale-tag { display:inline-flex; align-items:center; gap:.5rem; font-family:'JetBrains Mono',monospace; font-size:.78rem; color:var(--accent); background:var(--accent-wash); padding:.3rem .7rem; border-radius:6px; }
+    .stat__num--accent { color: var(--accent); }
+    .facts { display:grid; grid-template-columns:auto 1fr; gap:.45rem 1.2rem; margin-top:1.2rem; padding-top:1.1rem; border-top:1px solid var(--line); font-size:.9rem; }
+    .facts dt { color:var(--faint); font-family:'JetBrains Mono',monospace; font-size:.76rem; padding-top:.15rem; }
+    .facts dd { color:var(--ink-soft); overflow-wrap:anywhere; }
+    .card__role--rev { color: var(--ok); background: #e7f6ef; }
+    .proof { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-top:1.4rem; }
+    .proof div { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:1.3rem; }
+    .proof h3 { font-size:1rem; font-weight:700; margin-bottom:.35rem; }
+    .proof p { color:var(--muted); font-size:.9rem; }
+    .tl--nd .tl { grid-template-columns:120px 1fr; padding:1rem 0; }
+    .tl--nd .tl__body h3 { font-size:1rem; }
+    .ledger { border:1px solid var(--line); border-radius:var(--r); overflow:hidden; }
+    .ledger__row { display:grid; grid-template-columns:1.4fr 1.2fr .6fr .8fr; gap:1rem; padding:.9rem 1.2rem; border-top:1px solid var(--line); font-size:.92rem; align-items:baseline; }
+    .ledger__row:first-child { border-top:none; background:var(--bg-soft); font-family:'JetBrains Mono',monospace; font-size:.72rem; text-transform:uppercase; letter-spacing:.06em; color:var(--faint); }
+    .ledger__row--total { background:var(--bg-soft); font-weight:700; }
+    .ledger .n { font-family:'JetBrains Mono',monospace; font-variant-numeric:tabular-nums; text-align:right; }
+    .ledger .m { color:var(--muted); }
+    .ledger .lbl { display:none; }
+    .incl { list-style:none; display:flex; flex-direction:column; gap:.6rem; margin-top:.4rem; }
+    .incl li { padding-left:1.3rem; position:relative; color:var(--ink-soft); font-size:.95rem; }
+    .incl li::before { content:""; position:absolute; left:0; top:.6em; width:7px; height:7px; border-radius:2px; background:var(--accent); }
+    .contact__email { font-family:'JetBrains Mono',monospace; font-size:1.05rem; color:#fff; user-select:all; display:block; margin-bottom:1.4rem; }
+    .note { margin-top:1.4rem; font-size:.82rem; color:var(--faint); max-width:760px; }
+    @media (max-width:760px) {
+      .proof { grid-template-columns:1fr; }
+      .tl--nd .tl { grid-template-columns:1fr; gap:.2rem; }
+      .ledger__row:first-child { display:none; }
+      .ledger__row { grid-template-columns:1fr auto; gap:.25rem 1rem; }
+      .ledger__row > :nth-child(2) { grid-column:1 / -1; order:3; font-size:.84rem; }
+      .ledger .n { text-align:left; }
+      .ledger .lbl { display:inline; color:var(--faint); font-size:.72rem; margin-right:.35rem; }
+      .ledger__row > .n:nth-child(3) { order:4; }
+      .ledger__row > .n:nth-child(4) { order:2; }
+      .ledger__row > :nth-child(1) { order:1; }
+      .facts { grid-template-columns:1fr; gap:.1rem; }
+      .facts dd { margin-bottom:.45rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__in">
+      <a href="./" class="nav__brand"><span class="nav__dot"></span><span class="nav__full">Vedran Balagović</span><span class="nav__short">VB</span></a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#neural-draft">Neural Draft</a>
+        <a href="#products">Products</a>
+        <a href="#apps">Apps</a>
+        <a href="#contact" class="nav__cta">Make an offer</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero__card">
+        <span class="sale-tag">For sale · as of 28 Sep 2026</span>
+        <p class="hero__headline" style="margin-top:1.1rem">Neural Draft Ltd and <span>eight live products</span>, sold together.</p>
+        <p class="hero__pitch">
+          A UK company plus a portfolio of AI SaaS products and mobile apps, designed, built and run by
+          one senior engineer. Two products earn <strong>Stripe-verified recurring revenue</strong>.
+          Every product is live in production, and full source code with git history is included.
+        </p>
+        <div class="stats">
+          <div class="stat"><span class="stat__num stat__num--accent">$29,500</span><span class="stat__label">asking, offers considered</span></div>
+          <div class="stat"><span class="stat__num">$168</span><span class="stat__label">MRR, verified</span></div>
+          <div class="stat"><span class="stat__num">$3,342</span><span class="stat__label">all-time revenue</span></div>
+          <div class="stat"><span class="stat__num">8</span><span class="stat__label">live products</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="built">
+      <div class="section__head">
+        <span class="eyebrow">How it was built</span>
+        <h2>Engineered over 18 months, with the history to prove it</h2>
+        <p>These products were built by a CTO with 10+ years of experience who has led a 15-engineer studio. AI tooling sped up the work. Architecture, infrastructure and review were done by hand, and every repository comes with its full commit history so you can check.</p>
+      </div>
+      <div class="stats" style="margin-top:0">
+        <div class="stat"><span class="stat__num">624</span><span class="stat__label">commits on Neural Draft</span></div>
+        <div class="stat"><span class="stat__num">93</span><span class="stat__label">separate build days</span></div>
+        <div class="stat"><span class="stat__num">Mar 2025</span><span class="stat__label">first commit</span></div>
+        <div class="stat"><span class="stat__num">2</span><span class="stat__label">published packages (MCP, SDK)</span></div>
+      </div>
+      <div class="proof">
+        <div><h3>Production architecture</h3><p>Multi-tenant Laravel 12 with separate landlord and tenant databases, Redis queues on Horizon, WebSockets on Reverb, Docker, Cloudflare and GCP.</p></div>
+        <div><h3>Tested and shippable</h3><p>Unit and feature test suites, a separate end-to-end suite, dev and prod flavours, and Fastlane release lanes for both app stores.</p></div>
+        <div><h3>One shared mobile base</h3><p>All Flutter apps sit on the same open-source base (flutter-presetup, in use since 2022): Riverpod, GoRouter, Firebase. One developer can maintain all of them.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="neural-draft">
+      <div class="section__head">
+        <span class="eyebrow">Flagship · includes the UK company</span>
+        <h2>Neural Draft</h2>
+        <p>The backend for AI-built websites. CMS, AI blog pipeline, social scheduling, bookings and Stripe Connect commerce, all driven from Claude Code, Cursor, Lovable or v0 through its own MCP server.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="card__top"><h3>The product</h3><span class="card__role">Neural Draft Ltd (UK)</span></div>
+          <p class="card__desc">Multi-tenant and white-label ready, with companion iOS and Android apps. Listed on PulseMCP and exhibited at the AI &amp; Big Data Expo in London. Accepted into the Peachscore accelerator, cohort 26.</p>
+          <dl class="facts">
+            <dt>Revenue</dt><dd>$210 all-time · 13 registered users</dd>
+            <dt>Pricing</dt><dd>Free · $25/mo · $119/mo · Scale and Enterprise</dd>
+            <dt>Domain rating</dt><dd>33</dd>
+            <dt>Stack</dt><dd>Laravel 12, Vue 3, Postgres, Redis, Python, Cloudflare, GCP</dd>
+          </dl>
+          <div class="spacer"></div>
+          <div class="card__links">
+            <a class="card__link" href="https://neuraldraft.io" target="_blank" rel="noopener">neuraldraft.io ↗</a>
+            <a class="card__link" href="https://trustmrr.com/startup/neural-draft" target="_blank" rel="noopener">TrustMRR ↗</a>
+            <a class="card__link" href="https://www.ai-expo.net/global/partner/neural-draft/" target="_blank" rel="noopener">AI Expo listing ↗</a>
+          </div>
+          <div class="stores">
+            <a class="store" href="https://apps.apple.com/us/app/neural-draft/id6755933471" target="_blank" rel="noopener" aria-label="Neural Draft on the App Store"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-apple"/></svg><span><small>Download on the</small>App Store</span></a>
+            <a class="store" href="https://play.google.com/store/apps/details?id=io.neuraldraft.app" target="_blank" rel="noopener" aria-label="Neural Draft on Google Play"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-play"/></svg><span><small>Get it on</small>Google Play</span></a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__top"><h3>History</h3></div>
+          <div class="timeline tl--nd">
+            <div class="tl"><span class="tl__when">Mar 2025</span><div class="tl__body"><h3>First commit</h3><p>Content platform started: AI blog, images, video and social.</p></div></div>
+            <div class="tl"><span class="tl__when">Oct 2025</span><div class="tl__body"><h3>Neural Draft Ltd</h3><p>UK company set up to operate the product.</p></div></div>
+            <div class="tl"><span class="tl__when">Dec 2025</span><div class="tl__body"><h3>Mobile apps</h3><p>iOS and Android companion apps released.</p></div></div>
+            <div class="tl"><span class="tl__when">Jan 2026</span><div class="tl__body"><h3>Website builder</h3><p>AI site generation service added (78 commits).</p></div></div>
+            <div class="tl"><span class="tl__when">Feb 2026</span><div class="tl__body"><h3>TechEx, Olympia London</h3><p>Exhibited at the AI &amp; Big Data Expo Global.</p></div></div>
+            <div class="tl"><span class="tl__when">May 2026</span><div class="tl__body"><h3>MCP server and SDK</h3><p>Repositioned as the backend for AI-built sites. End-to-end test suite added.</p></div></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="section__head">
+        <span class="eyebrow">Web products</span>
+        <h2>Revenue and pipeline</h2>
+        <p>Two products with paying customers, and one ready for its first.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="card__top"><h3>CarsDataset</h3><span class="card__role card__role--rev">$149 MRR</span></div>
+          <p class="card__desc">Vehicle specification database and API with a <strong>reselling licence</strong>. 54,000+ variants across 370+ brands, plus 105,000+ real market price listings from 11 European countries. It reached about $1,900 in revenue with no marketing.</p>
+          <dl class="facts">
+            <dt>Revenue</dt><dd>$1,903 all-time · $521 last 30 days</dd>
+            <dt>Pricing</dt><dd>$499 dataset · $999 bundle · $149/mo API</dd>
+            <dt>Timeline</dt><dd>Started Nov 2025 · launched Apr 2026</dd>
+            <dt>Stack</dt><dd>Python, Google Cloud, Stripe</dd>
+          </dl>
+          <div class="spacer"></div>
+          <div class="card__links"><a class="card__link" href="https://trustmrr.com/startup/carsdataset" target="_blank" rel="noopener">Verified revenue ↗</a></div>
+        </article>
+        <article class="card">
+          <div class="card__top"><h3>Motchi.art</h3><span class="card__role card__role--rev">$19 MRR</span></div>
+          <p class="card__desc">Turns a text prompt or photo into an animated character with a transparent background. Exports Lottie, WebP, SVG and MP4 for apps, games and websites.</p>
+          <dl class="facts">
+            <dt>Revenue</dt><dd>$1,219 all-time · 200+ signups</dd>
+            <dt>Timeline</dt><dd>Started and launched Mar 2026</dd>
+            <dt>Stack</dt><dd>Node.js, Python, Tailwind, GCP, Stripe</dd>
+          </dl>
+          <div class="spacer"></div>
+          <div class="card__links"><a class="card__link" href="https://motchi.art" target="_blank" rel="noopener">motchi.art ↗</a><a class="card__link" href="https://trustmrr.com/startup/motchi-art" target="_blank" rel="noopener">Verified revenue ↗</a></div>
+        </article>
+        <article class="card card--feature">
+          <div class="card__top"><h3>Batchcraft</h3><span class="card__role card__role--private">Pre-revenue</span></div>
+          <p class="card__desc">An AI creative director for paid social. It extracts a brand kit from a URL, then produces batches of on-brand static ads and motion reels in 4:5, 9:16 and 1:1. A brand-safety check blocks invented claims and off-palette colours, and every creative is hash-checked so no two are identical.</p>
+          <dl class="facts">
+            <dt>Pricing</dt><dd>Free · $29 · $99 · $299 per month</dd>
+            <dt>Timeline</dt><dd>Started Jul 2026 · 109 commits in 8 weeks</dd>
+            <dt>Stack</dt><dd>Next.js, TypeScript, Firebase</dd>
+          </dl>
+          <div class="card__links"><a class="card__link" href="https://batchcraft.studio" target="_blank" rel="noopener">batchcraft.studio ↗</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="apps">
+      <div class="section__head">
+        <span class="eyebrow">Mobile</span>
+        <h2>Consumer apps</h2>
+        <p>Flutter apps on the App Store and Google Play, all built on the same base.</p>
+        <div class="card__links">
+          <a class="card__link" href="https://play.google.com/store/apps/dev?id=7520165147753188094" target="_blank" rel="noopener">All apps on Google Play ↗</a>
+          <a class="card__link" href="https://apps.apple.com/us/developer/vedran-balagovic/id1828156332" target="_blank" rel="noopener">All apps on the App Store ↗</a>
+        </div>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="card__top"><h3>Littlemind</h3><span class="card__role card__role--private">Subscriptions built in</span></div>
+          <p class="card__desc">A 60-second daily mood check-in for parents of kids aged 4–14, with an AI companion that turns check-ins into parenting insights. Includes a web landing site.</p>
+          <dl class="facts"><dt>Released</dt><dd>May 2026 · iOS and Android</dd><dt>Stack</dt><dd>Flutter, Riverpod 3, Firebase</dd></dl>
+          <div class="spacer"></div>
+          <div class="stores">
+            <a class="store" href="https://apps.apple.com/us/app/littlemind-kids-mood-tracker/id6771246942" target="_blank" rel="noopener" aria-label="Littlemind on the App Store"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-apple"/></svg><span><small>Download on the</small>App Store</span></a>
+            <a class="store" href="https://play.google.com/store/apps/details?id=com.littlemind.app" target="_blank" rel="noopener" aria-label="Littlemind on Google Play"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-play"/></svg><span><small>Get it on</small>Google Play</span></a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__top"><h3>Astraea</h3><span class="card__role card__role--rev">First revenue</span></div>
+          <p class="card__desc">Mood and astrology journal with natal chart readings, daily horoscopes, AI voice chat and a journal. Backed by Firebase Cloud Functions. 100+ installs and $10 in first in-app revenue.</p>
+          <dl class="facts"><dt>Latest</dt><dd>v1.1.0, May 2026 · Android</dd><dt>Stack</dt><dd>Flutter, Firebase, Cloud Functions, Fastlane</dd></dl>
+          <div class="spacer"></div>
+          <div class="stores">
+            <a class="store" href="https://play.google.com/store/apps/details?id=so.astrea.app" target="_blank" rel="noopener" aria-label="Astraea on Google Play"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-play"/></svg><span><small>Get it on</small>Google Play</span></a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__top"><h3>Stashd</h3></div>
+          <p class="card__desc">Save anything from the share sheet. Claude-powered AI files it, summarises it and makes it easy to find again.</p>
+          <dl class="facts"><dt>Released</dt><dd>Mar 2026 · iOS and Android</dd><dt>Stack</dt><dd>Flutter, Firebase, Cloud Functions, Claude API</dd></dl>
+          <div class="spacer"></div>
+          <div class="stores">
+            <a class="store" href="https://apps.apple.com/us/app/stashd-ai-save-read-later/id6759736233" target="_blank" rel="noopener" aria-label="Stashd on the App Store"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-apple"/></svg><span><small>Download on the</small>App Store</span></a>
+            <a class="store" href="https://play.google.com/store/apps/details?id=cx.stashd.app" target="_blank" rel="noopener" aria-label="Stashd on Google Play"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-play"/></svg><span><small>Get it on</small>Google Play</span></a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__top"><h3>Timeboard</h3></div>
+          <p class="card__desc">An always-on hub that turns a spare iPhone or iPad into a clock and information display.</p>
+          <dl class="facts"><dt>Released</dt><dd>Jul 2025 · iOS</dd><dt>Stack</dt><dd>Flutter</dd></dl>
+          <div class="spacer"></div>
+          <div class="stores">
+            <a class="store" href="https://apps.apple.com/us/app/timeboard-alwayson-hub/id6748942744" target="_blank" rel="noopener" aria-label="Timeboard on the App Store"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-apple"/></svg><span><small>Download on the</small>App Store</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="summary">
+      <div class="section__head">
+        <span class="eyebrow">Summary</span>
+        <h2>Everything in the sale</h2>
+      </div>
+      <div class="ledger" role="table" aria-label="Assets in the sale">
+        <div class="ledger__row" role="row"><span role="columnheader">Asset</span><span role="columnheader">Type</span><span class="n" role="columnheader">MRR</span><span class="n" role="columnheader">All-time</span></div>
+        <div class="ledger__row" role="row"><span>Neural Draft Ltd</span><span class="m">UK limited company</span><span class="n">–</span><span class="n">–</span></div>
+        <div class="ledger__row" role="row"><span>CarsDataset</span><span class="m">Data + API SaaS</span><span class="n"><span class="lbl">MRR</span>$149</span><span class="n"><span class="lbl">All-time</span>$1,903</span></div>
+        <div class="ledger__row" role="row"><span>Motchi.art</span><span class="m">AI SaaS</span><span class="n"><span class="lbl">MRR</span>$19</span><span class="n"><span class="lbl">All-time</span>$1,219</span></div>
+        <div class="ledger__row" role="row"><span>Neural Draft</span><span class="m">AI platform + mobile apps</span><span class="n"><span class="lbl">MRR</span>$0</span><span class="n"><span class="lbl">All-time</span>$210</span></div>
+        <div class="ledger__row" role="row"><span>Astraea</span><span class="m">Mobile app</span><span class="n"><span class="lbl">MRR</span>$0</span><span class="n"><span class="lbl">All-time</span>$10</span></div>
+        <div class="ledger__row" role="row"><span>Batchcraft</span><span class="m">AI SaaS</span><span class="n"><span class="lbl">MRR</span>$0</span><span class="n"><span class="lbl">All-time</span>$0</span></div>
+        <div class="ledger__row" role="row"><span>Littlemind, Stashd, Timeboard</span><span class="m">Mobile apps</span><span class="n"><span class="lbl">MRR</span>$0</span><span class="n"><span class="lbl">All-time</span>$0</span></div>
+        <div class="ledger__row ledger__row--total" role="row"><span>Total</span><span></span><span class="n"><span class="lbl">MRR</span>$168</span><span class="n"><span class="lbl">All-time</span>$3,342</span></div>
+      </div>
+      <p class="note">Revenue is Stripe-verified on TrustMRR as of 28 September 2026, except Astraea's in-app revenue, which is reported by the seller. Commit counts and dates come from the repositories' git history.</p>
+    </section>
+
+    <section class="section">
+      <div class="cards">
+        <article class="card">
+          <span class="eyebrow">What you get</span>
+          <ul class="incl">
+            <li>Neural Draft Ltd (UK)</li>
+            <li>Full source code and git history for all eight products</li>
+            <li>All domains</li>
+            <li>Neural Draft Ltd's Stripe account, which comes with the company</li>
+            <li>CarsDataset and Motchi customers moved to your own Stripe account during handover</li>
+            <li>App Store and Google Play listings transferred to your accounts</li>
+            <li>The CarsDataset data, pipelines and reseller licence</li>
+            <li>Deploy scripts, Docker setups and release lanes</li>
+            <li>A handover period with the builder</li>
+          </ul>
+        </article>
+        <article class="card">
+          <span class="eyebrow">A good fit for</span>
+          <ul class="incl">
+            <li>An agency or studio that wants ready products for its clients</li>
+            <li>An operator with distribution who can market working products</li>
+            <li>A data or automotive business that wants CarsDataset and its reseller licence</li>
+            <li>A buyer who wants a UK company with live products attached</li>
+          </ul>
+          <p class="note" style="margin-top:1rem">Offers for individual products are also considered.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact__inner">
+        <span class="eyebrow">Make an offer</span>
+        <h2>Talk to the builder directly</h2>
+        <p class="contact__lead">Demo access, revenue exports and repository access are available on request under NDA.</p>
+        <span class="contact__email">vedran@knittedlogic.com</span>
+        <div class="contact__actions">
+          <a class="btn btn--primary" href="mailto:vedran@knittedlogic.com?subject=Portfolio%20offer">Email Vedran</a>
+          <a class="btn" href="https://linkedin.com/in/vedran-balagovic" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="./">About me</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 Vedran Balagović · Zagreb, Croatia</span>
+    <div class="footer__links">
+      <a href="./">Home</a>
+      <a href="https://github.com/vbalagovic" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://trustmrr.com/founder/dr_terapeut" target="_blank" rel="noopener">TrustMRR</a>
+    </div>
+  </footer>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-apple" viewBox="0 0 24 24"><path d="M16.36 12.78c-.02-2.2 1.8-3.26 1.88-3.31-1.03-1.5-2.62-1.7-3.19-1.73-1.36-.14-2.65.8-3.34.8-.69 0-1.75-.78-2.88-.76-1.48.02-2.85.86-3.61 2.19-1.54 2.67-.39 6.62 1.1 8.79.73 1.06 1.6 2.26 2.74 2.21 1.1-.04 1.51-.71 2.84-.71 1.32 0 1.7.71 2.86.69 1.18-.02 1.93-1.08 2.65-2.15.84-1.23 1.18-2.42 1.2-2.48-.03-.01-2.29-.88-2.31-3.51zM14.2 6.3c.6-.73 1.01-1.75.9-2.76-.87.03-1.92.58-2.55 1.31-.56.64-1.05 1.67-.92 2.66.97.07 1.96-.49 2.57-1.21z"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M3.6 2.3c-.2.2-.32.53-.32.95v17.5c0 .42.12.75.33.95l.06.05L13.4 12v-.1L3.66 2.25l-.06.05zM17 15.3l-3.26-3.25v-.1L17 8.7l.07.04 3.86 2.2c1.1.62 1.1 1.64 0 2.27l-3.86 2.2-.07-.1zM16.4 15.9 13.1 12.6l-9.5 9.5c.36.38.96.43 1.64.05l11.16-6.3zM5.24 1.85c-.68-.38-1.28-.33-1.64.05l9.5 9.5 3.3-3.3L5.24 1.85z"/></symbol>
+  </svg>
+</body>
+</html>

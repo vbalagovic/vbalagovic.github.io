@@ -263,3 +263,13 @@ a.writing__card:hover { border-color: var(--line-strong); box-shadow: 0 16px 36p
   * { scroll-behavior: auto !important; }
   .js .reveal { opacity: 1; transform: none; transition: none; }
 }
+
+/* product screenshots */
+.card__shot { display:block; width:calc(100% + 2*var(--card-pad, 1.6rem)); max-width:none; margin:calc(-1*var(--card-pad, 1.6rem)) calc(-1*var(--card-pad, 1.6rem)) 1.2rem; aspect-ratio:2/1; object-fit:cover; object-position:top; border-bottom:1px solid var(--line, #e7e2da); border-radius:inherit; border-bottom-left-radius:0; border-bottom-right-radius:0; }
+.phones { display:flex; gap:.5rem; margin:1rem 0 .2rem; }
+.phones img { flex:1 1 0; min-width:0; aspect-ratio:9/19; object-fit:cover; object-position:top; border-radius:10px; border:1px solid var(--line, #e7e2da); background:#f4f1ec; }
+.card { --card-pad: 1.7rem; overflow: hidden; }
+.card--feature .card__shot { aspect-ratio: 2.6/1; }
+.phones { max-width: 340px; }
+.card__shot { height: auto; }
+.cards > .card { min-width: 0; }

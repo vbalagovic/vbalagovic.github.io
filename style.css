@@ -273,3 +273,51 @@ a.writing__card:hover { border-color: var(--line-strong); box-shadow: 0 16px 36p
 .phones { max-width: 340px; }
 .card__shot { height: auto; }
 .cards > .card { min-width: 0; }
+
+/* ---------- hero: "Currently" panel ---------- */
+.hero__body { display: grid; grid-template-columns: minmax(0, 1fr) 270px; gap: 2.6rem; align-items: start; }
+.hero__now { background: var(--bg-soft); border: 1px solid var(--line); border-radius: 14px; padding: 1.3rem 1.3rem 1.2rem; }
+.hero__now-label { display: block; font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.7rem; }
+.hero__now ul { list-style: none; margin: 0 0 1.2rem; padding: 0; display: grid; gap: 0.75rem; }
+.hero__now li { display: flex; flex-direction: column; line-height: 1.3; }
+.hero__now b { font-weight: 600; color: var(--ink); font-size: 0.96rem; }
+.hero__now li span, .hero__now p { color: var(--muted); font-size: 0.85rem; }
+@media (max-width: 880px) { .hero__body { grid-template-columns: 1fr; gap: 1.8rem; } }
+
+/* ---------- wide card: copy left, screens right ---------- */
+.card--wide { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1fr) 340px; column-gap: 2rem; align-items: start; }
+.card--wide > .phones { grid-column: 2; grid-row: 1 / span 6; margin: 0; }
+.card--wide > :not(.phones) { grid-column: 1; }
+@media (max-width: 760px) { .card--wide { display: flex; } .card--wide > .phones { margin: 1rem 0 .2rem; } }
+
+/* ---------- feature cards: larger screens ---------- */
+.card--feature .phones { max-width: 460px; }
+
+/* ---------- writing ---------- */
+.writing__kind { display: block; font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; letter-spacing: 0.04em; color: var(--accent); margin-bottom: 0.45rem; }
+@media (min-width: 761px) and (max-width: 1000px) { .writing { grid-template-columns: repeat(2, 1fr); } }
+
+/* ---------- mobile polish ---------- */
+.hero__avail i { flex-shrink: 0; }
+.nav__dot { flex-shrink: 0; }
+@media (max-width: 760px) {
+  .hero { padding: 1.4rem 0 2.2rem; }
+  .hero__card { padding: 1.4rem 1.25rem 1.5rem; border-radius: 16px; }
+  .hero__id { align-items: flex-start; gap: 0.95rem; }
+  .hero__photo { width: 72px; height: 72px; border-radius: 12px; }
+  .hero__name { font-size: 1.4rem; }
+  .hero__role { font-size: 0.74rem; line-height: 1.45; margin-top: 0.2rem; }
+  .hero__avail { align-items: flex-start; font-size: 0.8rem; line-height: 1.35; margin-top: 0.5rem; }
+  .hero__avail i { margin-top: 0.38em; }
+  .hero__rule { margin: 1.3rem 0; }
+  .hero__headline { font-size: 1.75rem; }
+  .hero__pitch { font-size: 1rem; line-height: 1.6; }
+  .hero__actions .btn { flex: 1 1 auto; justify-content: center; text-align: center; }
+  .card { padding: 1.3rem; }
+  .card { --card-pad: 1.3rem; }
+}
+
+/* ---------- Batchcraft ad strip ---------- */
+.ads { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.6rem; margin: 1.1rem 0 0.2rem; }
+.ads img { width: 100%; height: auto; aspect-ratio: 4/5; object-fit: cover; border-radius: 10px; border: 1px solid var(--line); box-shadow: 0 10px 24px -18px rgba(14,17,22,.45); }
+@media (max-width: 760px) { .ads { grid-template-columns: repeat(3, 1fr); } .ads img:nth-child(n+4) { display: none; } }

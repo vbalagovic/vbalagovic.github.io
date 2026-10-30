@@ -11,12 +11,15 @@
   <meta property="og:title" content="Vedran Balagović — Fractional CTO &amp; Technical Advisor" />
   <meta property="og:description" content="Technical leadership, hands-on. Architecture, AI/LLM strategy and infrastructure — backed by a decade of shipping. Fractional CTO, advisory & technical due diligence." />
   <meta property="og:type" content="profile" />
-  <meta property="og:image" content="profile.jpg" />
+  <meta property="og:image" content="https://vbalagovic.github.io/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta property="og:url" content="https://vbalagovic.github.io/" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:image" content="profile.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://vbalagovic.github.io/og.png" />
 
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='42' fill='%232c52cc'/></svg>" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -48,6 +51,8 @@
           </div>
         </div>
         <hr class="hero__rule" />
+        <div class="hero__body">
+        <div class="hero__main">
         <p class="hero__headline">The technical co-founder you can <span>hire by the week.</span></p>
         <p class="hero__pitch">
           I help founders make the right architecture and AI calls — set technical direction, derisk
@@ -66,6 +71,18 @@
           <li><a href="https://medium.com/@vedran.balagovic" target="_blank" rel="noopener">Medium</a></li>
           <li><a href="https://neuraldraft.io" target="_blank" rel="noopener">Neural Draft</a></li>
         </ul>
+        </div>
+        <aside class="hero__now" aria-label="Currently">
+          <span class="hero__now-label">Currently</span>
+          <ul>
+            <li><b>CIO</b><span>Agesync d.o.o. · since Apr 2026</span></li>
+            <li><b>AI Engineer</b><span>Ingemark · since May 2026</span></li>
+            <li><b>Founder</b><span>Neural Draft &amp; Batchcraft</span></li>
+          </ul>
+          <span class="hero__now-label">Shipped</span>
+          <p>50+ products across iOS, Android, web and AI infrastructure.</p>
+        </aside>
+        </div>
       </div>
     </section>
 
@@ -169,7 +186,7 @@
             regression suite gates each release. Sister product to Neural Draft, which schedules and
             publishes what Batchcraft makes.
           </p>
-          <div class="phones"><img src="img/apps/batchcraft-agesync-story-1.jpg" alt="Batchcraft ad made for Agesync" loading="lazy"><img src="img/apps/batchcraft-autovaluer-story-1.jpg" alt="Batchcraft ad made for AutoValuer" loading="lazy"><img src="img/apps/batchcraft-neuraldraft-story-1.jpg" alt="Batchcraft ad made for Neural Draft" loading="lazy"></div>
+          <div class="ads"><img src="img/apps/batchcraft-littlemind-1.jpg" alt="Batchcraft ad made for Littlemind" loading="lazy" width="560" height="700"><img src="img/apps/batchcraft-autovaluer-1.jpg" alt="Batchcraft ad made for AutoValuer" loading="lazy" width="560" height="700"><img src="img/apps/batchcraft-astraea-portrait-1.jpg" alt="Batchcraft ad made for Astraea" loading="lazy" width="560" height="700"><img src="img/apps/batchcraft-agesync-1.jpg" alt="Batchcraft ad made for Agesync" loading="lazy" width="560" height="700"><img src="img/apps/batchcraft-motchi-1.jpg" alt="Batchcraft ad made for motchi.art" loading="lazy" width="560" height="700"></div>
           <div class="tags"><span>Brand extraction</span><span>Ad composition</span><span>Reels</span><span>Quality judge</span></div>
           <div class="spacer"></div>
           <div class="card__links">
@@ -356,7 +373,7 @@
             <span class="card__role">Builder · Mobile</span>
           </div>
           <p class="card__desc">Save anything from the share sheet. <strong>Claude-powered AI</strong> files it, summarises it and makes it easy to find again. Released Mar 2026 on iOS and Android.</p>
-          <div class="phones"><img src="img/apps/stashd-1.jpg" alt="Stashd app screen 1" loading="lazy"><img src="img/apps/stashd-2.jpg" alt="Stashd app screen 2" loading="lazy"><img src="img/apps/stashd-3.jpg" alt="Stashd app screen 3" loading="lazy"></div>
+          <div class="phones"><img src="img/apps/stashd-1.jpg" alt="Stashd home: your saved items" loading="lazy"><img src="img/apps/stashd-2.jpg" alt="Stashd item with AI summary and tags" loading="lazy"><img src="img/apps/stashd-3.jpg" alt="Ask your Stash chat" loading="lazy"></div>
           <div class="tags"><span>Flutter</span><span>Firebase + Cloud Functions</span><span>Claude API</span></div>
           <div class="spacer"></div>
           <div class="stores">
@@ -371,7 +388,7 @@
           </div>
         </article>
 
-        <article class="card reveal">
+        <article class="card card--wide reveal">
           <div class="card__top">
             <h3>Timeboard</h3>
             <span class="card__role">Builder · Mobile</span>
@@ -388,19 +405,6 @@
           </div>
         </article>
 
-        <article class="card reveal">
-          <div class="card__top">
-            <h3>gospeech</h3>
-            <span class="card__role card__role--private">Private R&amp;D</span>
-          </div>
-          <p class="card__desc">
-            <strong>Local speech-to-text with speaker diarization</strong> — no Python, no cloud, a
-            single binary. Wraps a pure-C <strong>Qwen3-ASR</strong> engine (PyTorch-matching quality,
-            hand-tuned SIMD, CUDA) with Pyannote 3.0 diarization via sherpa-onnx, plus optional
-            local-LLM speaker identification.
-          </p>
-          <div class="tags"><span>Qwen3-ASR</span><span>Go + C / CGO</span><span>Diarization</span><span>On-device</span></div>
-        </article>
       </div>
     </section>
 
@@ -438,6 +442,15 @@
             lets AI agents act safely and usefully.
           </p>
           <div class="tags"><span>MCP</span><span>GPT-4o</span><span>Cost-aware AI</span></div>
+        </article>
+        <article class="card reveal">
+          <div class="card__top"><h3>Generation you can trust</h3><span class="card__role">Batchcraft</span></div>
+          <p class="card__desc">
+            Brand extraction from a live website, ad composition around real assets, and an
+            <strong>automated quality judge</strong> that scores every ad before delivery, with retries.
+            A golden-brand <strong>regression suite</strong> gates every release.
+          </p>
+          <div class="tags"><span>LLM-as-judge</span><span>Evals</span><span>Regression gates</span></div>
         </article>
       </div>
     </section>
@@ -564,20 +577,38 @@
     <section class="section">
       <div class="section__head reveal">
         <span class="eyebrow">Writing &amp; community</span>
-        <h2>Sharing what I learn</h2>
+        <h2>Writing, talks &amp; podcasts</h2>
       </div>
       <div class="writing reveal">
-        <a class="writing__card" href="https://medium.com/@vedran.balagovic" target="_blank" rel="noopener">
-          <h4>Medium · 220+ followers</h4>
-          <p>Startup engineering, Flutter at scale, DevOps and AI integration.</p>
-        </a>
-        <a class="writing__card" href="https://itnext.io/building-truly-cross-platform-flutter-applications-desktop-and-web-mastery-8c359592c661" target="_blank" rel="noopener">
-          <h4>Published in ITNEXT</h4>
-          <p>Cross-platform Flutter — desktop &amp; web mastery, and more.</p>
+        <a class="writing__card" href="https://redcircle.com/shows/1e717ca8-94d4-4a39-807e-a148884a9786/episodes/07a7fb0f-6108-4742-b254-dd579bb3d1d5" target="_blank" rel="noopener">
+          <span class="writing__kind">Podcast · 2023</span>
+          <h4>Flying High with Flutter #102</h4>
+          <p>Guest on Allen Wyma's Flutter podcast, talking about building with Flutter.</p>
         </a>
         <a class="writing__card" href="https://github.com/vbalagovic/flutter-flame-showcase-mk" target="_blank" rel="noopener">
-          <h4>Speaker · Zagorje DevCon</h4>
-          <p>Organizer &amp; speaker — including a Flutter + Flame game-dev talk.</p>
+          <span class="writing__kind">Talk · Zagorje DevCon</span>
+          <h4>Mortal Kombat in Flutter + Flame</h4>
+          <p>Organizer and speaker. A live game-dev demo built with Flutter and Flame.</p>
+        </a>
+        <a class="writing__card" href="https://itnext.io/building-neural-draft-a-deep-dive-into-multi-ai-content-generation-architecture-baae918535b8" target="_blank" rel="noopener">
+          <span class="writing__kind">ITNEXT · Dec 2025</span>
+          <h4>Building Neural Draft</h4>
+          <p>A deep dive into multi-AI content generation architecture.</p>
+        </a>
+        <a class="writing__card" href="https://itnext.io/i-built-an-ai-engine-that-turns-text-prompts-into-production-ready-animated-characters-heres-how-5d3b1031e55a" target="_blank" rel="noopener">
+          <span class="writing__kind">ITNEXT · Feb 2026</span>
+          <h4>Text prompts to animated characters</h4>
+          <p>How the motchi.art engine turns a prompt into production-ready animation.</p>
+        </a>
+        <a class="writing__card" href="https://itnext.io/how-i-almost-killed-my-saas-and-what-made-me-pivot-it-instead-e02aa6fb3c2f" target="_blank" rel="noopener">
+          <span class="writing__kind">ITNEXT · May 2026</span>
+          <h4>How I almost killed my SaaS</h4>
+          <p>And what made me pivot it instead.</p>
+        </a>
+        <a class="writing__card" href="https://medium.com/@vedran.balagovic" target="_blank" rel="noopener">
+          <span class="writing__kind">Medium</span>
+          <h4>All articles →</h4>
+          <p>Startup engineering, Flutter at scale, DevOps and AI integration. Published in ITNEXT.</p>
         </a>
       </div>
     </section>

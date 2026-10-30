@@ -321,3 +321,9 @@ a.writing__card:hover { border-color: var(--line-strong); box-shadow: 0 16px 36p
 .ads { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.6rem; margin: 1.1rem 0 0.2rem; }
 .ads img { width: 100%; height: auto; aspect-ratio: 4/5; object-fit: cover; border-radius: 10px; border: 1px solid var(--line); box-shadow: 0 10px 24px -18px rgba(14,17,22,.45); }
 @media (max-width: 760px) { .ads { grid-template-columns: repeat(3, 1fr); } .ads img:nth-child(n+4) { display: none; } }
+
+/* ---------- nav monogram ---------- */
+.nav__brand { gap: 0.65rem; }
+.nav__mark { flex-shrink: 0; width: 32px; height: 32px; border-radius: 9px; background: var(--accent); color: #fff;
+  display: inline-flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.82rem; letter-spacing: -0.02em;
+  box-shadow: 0 6px 14px -8px rgba(44,82,204,.7); }
